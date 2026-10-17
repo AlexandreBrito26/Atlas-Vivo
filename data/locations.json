@@ -1,0 +1,150 @@
+[
+  {
+    "id": 1,
+    "name": "Vila do Vale",
+    "region": "Planície Verde",
+    "type": "vila",
+    "description": "Um povoado tranquilo onde tudo começa. Mercado aos domingos.",
+    "x": 22,
+    "y": 35,
+    "tags": [
+      "começo",
+      "mercado"
+    ],
+    "links": [
+      2,
+      4
+    ],
+    "year": 1,
+    "events": [
+      {
+        "year": 1,
+        "title": "Fundação do povoado"
+      },
+      {
+        "year": 240,
+        "title": "Primeira feira anual"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Torre do Eco",
+    "region": "Montanhas Cinzas",
+    "type": "torre",
+    "description": "Ruína antiga cujas paredes repetem sussurros de séculos atrás.",
+    "x": 61,
+    "y": 18,
+    "tags": [
+      "ruína",
+      "eco"
+    ],
+    "links": [
+      1,
+      5
+    ],
+    "year": -200,
+    "events": [
+      {
+        "year": -200,
+        "title": "Construção da torre"
+      },
+      {
+        "year": -40,
+        "title": "Queda durante um cerco",
+        "status": "destruido"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Porto Salgado",
+    "region": "Costa Oeste",
+    "type": "porto",
+    "description": "Cidade portuária cheia de contrabandistas e boas histórias.",
+    "x": 12,
+    "y": 68,
+    "tags": [
+      "contrabando"
+    ],
+    "links": [
+      6
+    ],
+    "year": 80,
+    "events": [
+      {
+        "year": 80,
+        "title": "Porto abre ao comércio"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Floresta Sussurrante",
+    "region": "Bosque Profundo",
+    "type": "floresta",
+    "description": "Trilhas que mudam de lugar à noite. Leve uma lanterna.",
+    "x": 45,
+    "y": 52,
+    "tags": [
+      "noturno"
+    ],
+    "links": [
+      1,
+      5
+    ],
+    "year": -500,
+    "events": [
+      {
+        "year": -500,
+        "title": "Primeiro mapeamento das trilhas"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Cidadela de Aço",
+    "region": "Terras Altas",
+    "type": "fortaleza",
+    "description": "Fortaleza militar governada por um conselho de ferreiros.",
+    "x": 78,
+    "y": 40,
+    "tags": [
+      "militar"
+    ],
+    "links": [
+      2,
+      4
+    ],
+    "year": 312,
+    "events": [
+      {
+        "year": 312,
+        "title": "Conselho dos ferreiros é formado"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Ilha das Marés",
+    "region": "Mar Aberto",
+    "type": "santuario",
+    "description": "Acessível só na maré baixa. Abriga um santuário submerso.",
+    "x": 84,
+    "y": 76,
+    "tags": [
+      "maré"
+    ],
+    "links": [
+      3
+    ],
+    "year": 450,
+    "events": [
+      {
+        "year": 450,
+        "title": "Santuário é selado pela maré",
+        "status": "abandonado"
+      }
+    ]
+  }
+]

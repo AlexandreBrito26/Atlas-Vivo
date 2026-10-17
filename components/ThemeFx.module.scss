@@ -1,0 +1,92 @@
+// Efeitos dos temas dia e noite. Tudo é só CSS: sem bibliotecas extras.
+
+.fade {
+  transition: opacity 0.9s ease;
+}
+
+.fx {
+  pointer-events: none;
+}
+
+// Brilho do sol / da lua respirando
+.glare {
+  animation: pulse 7s ease-in-out infinite alternate;
+}
+@keyframes pulse {
+  from { opacity: 0.7; }
+  to { opacity: 1; }
+}
+
+// Sombras de nuvens atravessando o mapa
+.cloud {
+  animation: drift linear infinite;
+}
+@keyframes drift {
+  from { transform: translateX(-420px); }
+  to { transform: translateX(1420px); }
+}
+
+// Pássaros cruzando em diagonal, batendo as asas
+.bird {
+  animation: fly linear infinite;
+}
+@keyframes fly {
+  from { transform: translate(-60px, var(--y0)); }
+  to { transform: translate(1080px, var(--y1)); }
+}
+.wing {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: flap 0.45s ease-in-out infinite alternate;
+}
+@keyframes flap {
+  from { transform: scaleY(1); }
+  to { transform: scaleY(-0.6); }
+}
+
+// Água: fluxo nos rios e cintilar nos lagos
+.flow {
+  animation: flow 3s linear infinite;
+}
+@keyframes flow {
+  to { stroke-dashoffset: -44; }
+}
+.sparkle {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: sparkle 3.2s ease-in-out infinite;
+}
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0.4); }
+  50% { opacity: 0.95; transform: scale(1); }
+}
+
+// Noite: estrelas piscando e vaga-lumes
+.twinkle {
+  animation: twinkle ease-in-out infinite;
+}
+@keyframes twinkle {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 1; }
+}
+.firefly {
+  animation: wander ease-in-out infinite;
+}
+@keyframes wander {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(var(--dx), var(--dy)); }
+}
+.blink {
+  animation: blink ease-in-out infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  40%, 60% { opacity: 1; }
+}
+
+// Quem pede menos movimento no sistema fica com a versão parada
+@media (prefers-reduced-motion: reduce) {
+  .fx * { animation: none !important; }
+  .cloud, .bird, .firefly { display: none; }
+  .twinkle { opacity: 0.7; }
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "planicie-verde",
+    "name": "Planície Verde",
+    "color": "#4f8a3a",
+    "points": [
+      [
+        10,
+        22
+      ],
+      [
+        34,
+        20
+      ],
+      [
+        38,
+        44
+      ],
+      [
+        14,
+        50
+      ]
+    ],
+    "sound": "vento"
+  },
+  {
+    "id": "montanhas-cinzas",
+    "name": "Montanhas Cinzas",
+    "color": "#6b6b78",
+    "points": [
+      [
+        48,
+        10
+      ],
+      [
+        72,
+        8
+      ],
+      [
+        74,
+        28
+      ],
+      [
+        50,
+        30
+      ]
+    ],
+    "sound": "montanha"
+  },
+  {
+    "id": "costa-oeste",
+    "name": "Costa Oeste",
+    "color": "#3f7fa3",
+    "points": [
+      [
+        6,
+        56
+      ],
+      [
+        22,
+        58
+      ],
+      [
+        24,
+        82
+      ],
+      [
+        8,
+        80
+      ]
+    ],
+    "sound": "ondas"
+  },
+  {
+    "id": "bosque-profundo",
+    "name": "Bosque Profundo",
+    "color": "#2e6b4a",
+    "points": [
+      [
+        34,
+        42
+      ],
+      [
+        56,
+        42
+      ],
+      [
+        58,
+        64
+      ],
+      [
+        36,
+        66
+      ]
+    ],
+    "sound": "floresta"
+  },
+  {
+    "id": "terras-altas",
+    "name": "Terras Altas",
+    "color": "#8a5a2e",
+    "points": [
+      [
+        66,
+        30
+      ],
+      [
+        90,
+        32
+      ],
+      [
+        90,
+        52
+      ],
+      [
+        68,
+        54
+      ]
+    ],
+    "sound": "montanha"
+  },
+  {
+    "id": "mar-aberto",
+    "name": "Mar Aberto",
+    "color": "#2e5d9a",
+    "points": [
+      [
+        74,
+        66
+      ],
+      [
+        96,
+        66
+      ],
+      [
+        96,
+        90
+      ],
+      [
+        74,
+        90
+      ]
+    ],
+    "sound": "ondas"
+  }
+]

@@ -1,0 +1,18 @@
+@use 'tokens' as *;
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  background: $bg;
+  color: $parchment;
+  min-height: 100vh;
+}
+
+a { color: inherit; }
+
+// Tema noite
+:root[data-theme='noite'] body {
+  background: #0b0d1a;
+}
