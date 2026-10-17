@@ -135,6 +135,44 @@
   visibility: visible;
 }
 
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 18px 0;
+}
+
+.search,
+.order {
+  padding: 10px 12px;
+  font: inherit;
+  color: $parchment;
+  background: rgba($parchment, 0.08);
+  border: 1px solid rgba($parchment, 0.25);
+  border-radius: 10px;
+  &:focus-visible { outline: 2px solid $accent; outline-offset: 1px; }
+}
+
+.search {
+  flex: 1 1 240px;
+  min-width: 0;
+  &::placeholder { color: $muted; }
+}
+
+.order option {
+  color: $ink;
+  background: $panel-bg;
+}
+
+.empty {
+  grid-column: 1 / -1;
+  margin: 24px 0;
+  text-align: center;
+  color: $muted;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));

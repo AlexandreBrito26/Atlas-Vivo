@@ -20,6 +20,11 @@ function commonsPageUrl(file: string) {
   return `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(file.replace(/ /g, '_'))}`;
 }
 
+// Busca sem acentos e sem diferenciar maiúsculas
+function normalize(text: string) {
+  return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+}
+
 function categoryOf(id: OldMapCategory) {
   return categories.find((c) => c.id === id)!;
 }
@@ -120,11 +125,19 @@ export function OldMapsGallery() {
   const [filter, setFilter] = useState<Filter>('todos');
   const [menuOpen, setMenuOpen] = useState(false);
   const [opened, setOpened] = useState<OldMap | null>(null);
+  const [query, setQuery] = useState('');
+  const [order, setOrder] = useState<'antigos' | 'recentes'>('antigos');
 
-  const list = useMemo(
-    () => (filter === 'todos' ? oldMaps : oldMaps.filter((m) => m.category === filter)),
-    [filter],
-  );
+  const list = useMemo(() => {
+    const q = normalize(query.trim());
+    const found = oldMaps.filter(
+      (m) =>
+        (filter === 'todos' || m.category === filter) &&
+        (!q || normalize(`${m.name} ${m.year} ${m.place} ${m.description}`).includes(q)),
+    );
+    // oldMaps já vem ordenado do mais antigo para o mais recente
+    return order === 'recentes' ? found.slice().reverse() : found;
+  }, [filter, query, order]);
 
   const counts = useMemo(() => {
     const c: Record<string, number> = { todos: oldMaps.length };
@@ -166,7 +179,9 @@ export function OldMapsGallery() {
         </button>
         <div className={styles.headTitle}>
           <h1>Mapas antigos</h1>
-          <p>{currentLabel}</p>
+          <p>
+            {currentLabel} · {list.length} {list.length === 1 ? 'mapa' : 'mapas'}
+          </p>
         </div>
         <Link href="/map" className={styles.back}>
           ← Atlas
@@ -209,7 +224,28 @@ export function OldMapsGallery() {
         </ul>
       </nav>
 
+      <div className={styles.tools}>
+        <input
+          type="search"
+          className={styles.search}
+          placeholder="Buscar por nome, época ou acervo"
+          aria-label="Buscar mapa"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <select
+          className={styles.order}
+          aria-label="Ordenar mapas"
+          value={order}
+          onChange={(e) => setOrder(e.target.value as 'antigos' | 'recentes')}
+        >
+          <option value="antigos">Mais antigos primeiro</option>
+          <option value="recentes">Mais recentes primeiro</option>
+        </select>
+      </div>
+
       <main className={styles.grid}>
+        {list.length === 0 && <p className={styles.empty}>Nenhum mapa encontrado.</p>}
         {list.map((m) => (
           <button key={m.id} className={styles.card} onClick={() => setOpened(m)}>
             <MapPicture map={m} width={500} className={styles.thumb} />

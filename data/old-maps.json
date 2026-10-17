@@ -309,5 +309,65 @@
     "sourceUrl": "https://en.wikipedia.org/wiki/Sykes%E2%80%93Picot_Agreement",
     "sourceLabel": "Wikipédia",
     "file": "MPK1-426 Sykes Picot Agreement Map signed 8 May 1916.jpg"
+  },
+  {
+    "id": "kashgari",
+    "name": "Mapa de Mahmud al-Kashgari",
+    "category": "india-asia-central",
+    "year": "1072–1074",
+    "sortYear": 1073,
+    "place": "Dicionário Dīwān Lughāt al-Turk",
+    "description": "Mapa-múndi do erudito Mahmud al-Kashgari, que vai do Japão ao Egito. Inclui o primeiro mapa conhecido das regiões habitadas por povos turcos.",
+    "file": "Kashgari map.jpg",
+    "sourceUrl": "https://en.wikipedia.org/wiki/D%C4%ABw%C4%81n_Lugh%C4%81t_al-Turk",
+    "sourceLabel": "Wikipédia"
+  },
+  {
+    "id": "rennell-hindoostan",
+    "name": "Mapa do Hindustão de Rennell",
+    "category": "india-asia-central",
+    "year": "c. 1782–1783",
+    "sortYear": 1782,
+    "place": "Londres (edição original)",
+    "description": "Primeiro mapa detalhado da Índia, resultado dos levantamentos de James Rennell, Agrimensor-Geral de Bengala. O livro que o explica saiu em 1788.",
+    "file": "Hindoostan Rennell 1782.jpg",
+    "sourceUrl": "https://en.wikipedia.org/wiki/James_Rennell",
+    "sourceLabel": "Wikipédia"
+  },
+  {
+    "id": "tenochtitlan-1524",
+    "name": "Mapa de Tenochtitlan (Nuremberg)",
+    "category": "americas",
+    "year": "1524",
+    "sortYear": 1524,
+    "place": "Nuremberg (edição original)",
+    "description": "Primeiro mapa europeu de Tenochtitlan, a capital asteca, publicado em Nuremberg em 1524.",
+    "file": "Map of Tenochtitlan and Gulf of Mexico, 1524.jpg",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Tenochtitlan",
+    "sourceLabel": "Wikipédia"
+  },
+  {
+    "id": "terra-brasilis",
+    "name": "Terra Brasilis (Atlas Miller)",
+    "category": "americas",
+    "year": "1519",
+    "sortYear": 1519,
+    "place": "Biblioteca Nacional da França, Paris",
+    "description": "Mapa do Brasil do Atlas Miller, atlas português feito por Lopo Homem, Pedro Reinel e Jorge Reinel, com miniaturas de António de Holanda. Foi desenhado menos de vinte anos depois da chegada de Cabral.",
+    "file": "AtlasMiller BNF Brasilis paubrasil.jpg",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Miller_Atlas",
+    "sourceLabel": "Wikipédia"
+  },
+  {
+    "id": "carta-de-tupaia",
+    "name": "Carta de Tupaia",
+    "category": "americas",
+    "year": "1769",
+    "sortYear": 1769,
+    "place": "Desenhada a bordo do Endeavour",
+    "description": "Em agosto de 1769, o navegador, sacerdote e artista Tupaia, de Ra’iatea, desenhou uma carta do Pacífico com cerca de 130 ilhas, 74 delas nomeadas, ligadas por rotas de navegação polinésias.",
+    "file": "Tupaia's map, c. 1769.jpg",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Tupaia_(navigator)",
+    "sourceLabel": "Wikipédia"
   }
 ]

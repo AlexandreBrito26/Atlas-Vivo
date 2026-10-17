@@ -23,7 +23,7 @@ Demonstra rotas paralelas (`@panel`) e interceptadas (`(..)location`), com mapa 
 - Temas dia e noite (botão **🌙 Noite / ☀ Dia**), com efeitos próprios e preferência salva no navegador
 - Esc fecha o painel
 - Painel vira gaveta no celular
-- Galeria de mapas antigos (`/mapas-antigos`): mapas famosos da China, do Japão, da Coreia, da Europa, do mundo islâmico dos Descobrimentos, da Antiguidade e de marcos históricos (Tordesilhas, mapa do cólera de Snow, Sykes–Picot), com menu hambúrguer de categorias e visualizador com zoom
+- Galeria de mapas antigos (`/mapas-antigos`): mapas famosos da China, do Japão, da Coreia, da Europa, do mundo islâmico, dos Descobrimentos, da Índia e Ásia Central, das Américas e do Pacífico, da Antiguidade e de marcos históricos (Tordesilhas, mapa do cólera de Snow, Sykes–Picot), com menu hambúrguer de categorias, busca por nome (sem acentos), ordenação por ano e visualizador com zoom
 
 ## Temas
 
@@ -54,7 +54,7 @@ Edite `data/locations.json`. Campos: `id`, `name`, `region`, `type` (`vila`, `to
 
 ## Mapas antigos
 
-Os mapas ficam em `data/old-maps.json`. Cada item tem `category` (`china`, `japao`, `coreia`, `europa`, `islamico`, `descobrimentos`, `antiguidade`, `marcos`), `year`, `place`, `description`, `sourceUrl` e, opcionalmente, `file`: o nome do arquivo no Wikimedia Commons (sem `File:`), que é carregado em tempo de execução, sem arquivos no repositório. Sem `file`, o cartão mostra um espaço reservado e o link do acervo. Para criar uma categoria nova, acrescente-a em `lib/oldMaps.ts`.
+Os mapas ficam em `data/old-maps.json`. Cada item tem `category` (`china`, `japao`, `coreia`, `europa`, `islamico`, `descobrimentos`, `antiguidade`, `marcos`, `india-asia-central`, `americas`), `year`, `place`, `description`, `sourceUrl` e, opcionalmente, `file`: o nome do arquivo no Wikimedia Commons (sem `File:`), que é carregado em tempo de execução, sem arquivos no repositório. Sem `file`, o cartão mostra um espaço reservado e o link do acervo. Para criar uma categoria nova, acrescente-a em `lib/oldMaps.ts`.
 
 ## Rotas
 

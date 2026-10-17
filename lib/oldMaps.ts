@@ -8,7 +8,9 @@ export type OldMapCategory =
   | 'islamico'
   | 'descobrimentos'
   | 'antiguidade'
-  | 'marcos';
+  | 'marcos'
+  | 'india-asia-central'
+  | 'americas';
 
 export type OldMap = {
   id: string;
@@ -37,4 +39,6 @@ export const categories: { id: OldMapCategory; label: string; icon: string }[] =
   { id: 'descobrimentos', label: 'Descobrimentos', icon: '⚓' },
   { id: 'antiguidade', label: 'Antiguidade', icon: '🏺' },
   { id: 'marcos', label: 'Marcos históricos', icon: '📜' },
+  { id: 'india-asia-central', label: 'Índia e Ásia Central', icon: '🐘' },
+  { id: 'americas', label: 'Américas e Pacífico', icon: '🌎' },
 ];
