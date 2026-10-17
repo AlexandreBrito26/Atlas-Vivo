@@ -18,7 +18,7 @@ export type OldMap = {
   sortYear: number; // usado só para ordenar
   place: string; // onde o mapa (ou a cópia) está guardado
   description: string;
-  wiki?: string; // título do artigo na Wikipédia: a imagem vem da Wikimedia
+  file?: string; // nome do arquivo no Wikimedia Commons (sem "File:")
   sourceUrl: string;
   sourceLabel: string;
 };

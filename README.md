@@ -54,7 +54,7 @@ Edite `data/locations.json`. Campos: `id`, `name`, `region`, `type` (`vila`, `to
 
 ## Mapas antigos
 
-Os mapas ficam em `data/old-maps.json`. Cada item tem `category` (`china`, `japao`, `coreia`, `europa`, `islamico`, `descobrimentos`, `antiguidade`, `marcos`), `year`, `place`, `description`, `sourceUrl` e, opcionalmente, `wiki`: o título do artigo da Wikipédia cuja imagem principal é usada (a imagem vem da Wikimedia em tempo de execução, sem arquivos no repositório). Sem `wiki`, o cartão mostra um espaço reservado e o link do acervo. Para criar uma categoria nova, acrescente-a em `lib/oldMaps.ts`.
+Os mapas ficam em `data/old-maps.json`. Cada item tem `category` (`china`, `japao`, `coreia`, `europa`, `islamico`, `descobrimentos`, `antiguidade`, `marcos`), `year`, `place`, `description`, `sourceUrl` e, opcionalmente, `file`: o nome do arquivo no Wikimedia Commons (sem `File:`), que é carregado em tempo de execução, sem arquivos no repositório. Sem `file`, o cartão mostra um espaço reservado e o link do acervo. Para criar uma categoria nova, acrescente-a em `lib/oldMaps.ts`.
 
 ## Rotas
 

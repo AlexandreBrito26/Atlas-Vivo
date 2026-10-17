@@ -6,10 +6,10 @@
     "year": "1136",
     "sortYear": 1136,
     "place": "Museu Beilin, Xi'an",
-    "description": "Mapa da China e das terras vizinhas gravado numa estela de pedra de cerca de 79 × 78 cm. No verso da estela fica o Yu Ji Tu, com grade de quadrados, gravado em 1142.",
-    "wiki": "Huayi_tu",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Huayi_tu",
-    "sourceLabel": "Wikipédia"
+    "description": "Mapa da China da dinastia Song do Sul gravado numa estela de pedra em 1136, com montanhas, rios, lagos e mais de 400 nomes de lugares. No verso da estela fica o Yu Ji Tu, com grade de quadrados, gravado em 1142.",
+    "sourceUrl": "https://www.loc.gov/item/2002626771/",
+    "sourceLabel": "Biblioteca do Congresso",
+    "file": "Rubbing of Huayi tu map.jpg"
   },
   {
     "id": "da-ming-hunyi-tu",
@@ -19,9 +19,9 @@
     "sortYear": 1389,
     "place": "Primeiro Arquivo Histórico da China, Pequim",
     "description": "Grande mapa da Eurásia pintado em cores sobre seda, da dinastia Ming. Hoje é guardado sob proteção especial em Pequim.",
-    "wiki": "Da_Ming_Hunyi_Tu",
     "sourceUrl": "https://en.wikipedia.org/wiki/Da_Ming_Hunyi_Tu",
-    "sourceLabel": "Wikipédia"
+    "sourceLabel": "Wikipédia",
+    "file": "Da-ming-hun-yi-tu.jpg"
   },
   {
     "id": "kunyu-wanguo-quantu",
@@ -30,10 +30,10 @@
     "year": "1602",
     "sortYear": 1602,
     "place": "Vaticano e Universidade de Minnesota (cópias)",
-    "description": "Mapa-múndi em xilogravura feito por Matteo Ricci com Zhong Wentao e Li Zhizao. É o mais antigo mapa-múndi chinês baseado na cartografia europeia.",
-    "wiki": "Kunyu_Wanguo_Quantu",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Kunyu_Wanguo_Quantu",
-    "sourceLabel": "Wikipédia"
+    "description": "Mapa-múndi oval em xilogravura, feito por Matteo Ricci com Zhong Wentao e Li Zhizao. Mostra cinco continentes e quatro oceanos e é o mais antigo mapa-múndi chinês baseado na cartografia europeia.",
+    "sourceUrl": "https://www.loc.gov/item/2010585650/",
+    "sourceLabel": "Biblioteca do Congresso",
+    "file": "Kunyu Wanguo Quantu (坤輿萬國全圖).jpg"
   },
   {
     "id": "selden-map",
@@ -43,9 +43,9 @@
     "sortYear": 1615,
     "place": "Biblioteca Bodleiana, Oxford",
     "description": "Mapa do início do século XVII que mostra a Ásia Oriental com rotas de navegação marítima.",
-    "wiki": "Selden_Map",
     "sourceUrl": "https://seldenmap.bodleian.ox.ac.uk",
-    "sourceLabel": "Biblioteca Bodleiana"
+    "sourceLabel": "Biblioteca Bodleiana",
+    "file": "Selden map.jpg"
   },
   {
     "id": "gyoki-zu",
@@ -56,7 +56,8 @@
     "place": "Diversas cópias medievais",
     "description": "Família de mapas do Japão que leva o nome do monge Gyōki, do século VIII. Mostra as províncias ligadas por estradas.",
     "sourceUrl": "https://jpsearch.go.jp/en/gallery/ndl-8oMvKPQYpQuRv9",
-    "sourceLabel": "Japan Search"
+    "sourceLabel": "Japan Search",
+    "file": "Gyouki 1.jpg"
   },
   {
     "id": "kanazawa-bunko",
@@ -66,7 +67,6 @@
     "sortYear": 1300,
     "place": "Kanazawa Bunko, Japão",
     "description": "Mapa antigo do Japão de data desconhecida, que provavelmente vem do período Kamakura.",
-    "wiki": "Map_of_Japan_(Kanazawa_Bunko)",
     "sourceUrl": "https://en.wikipedia.org/wiki/Map_of_Japan_(Kanazawa_Bunko)",
     "sourceLabel": "Wikipédia"
   },
@@ -76,10 +76,11 @@
     "category": "japao",
     "year": "1821",
     "sortYear": 1821,
-    "place": "Diversas cópias",
-    "description": "Mapa do Japão concluído em 1821, a partir dos levantamentos de campo de Inō Tadataka.",
-    "sourceUrl": "https://en.wikipedia.org/wiki/In%C5%8D_Tadataka",
-    "sourceLabel": "Wikipédia (Inō Tadataka)"
+    "place": "Biblioteca do Congresso, Washington (cópia)",
+    "description": "Mapa do Japão concluído em 1821, a partir dos levantamentos de campo de Inō Tadataka entre 1800 e 1816. O original tem 214 folhas, com costas, rios e estradas.",
+    "sourceUrl": "https://www.loc.gov/item/2001620020/",
+    "sourceLabel": "Biblioteca do Congresso",
+    "file": "伊能図全体図.webp"
   },
   {
     "id": "kangnido",
@@ -89,9 +90,9 @@
     "sortYear": 1402,
     "place": "Universidade Ryūkoku e templo Honkōji, Japão",
     "description": "Mapa-múndi feito pelos eruditos coreanos Kwon Kun e Yi Hoe. É o mais antigo mapa-múndi coreano que sobreviveu, e suas duas cópias conhecidas estão no Japão.",
-    "wiki": "Kangnido",
     "sourceUrl": "https://en.wikipedia.org/wiki/Kangnido",
-    "sourceLabel": "Wikipédia"
+    "sourceLabel": "Wikipédia",
+    "file": "KangnidoMap.jpg"
   },
   {
     "id": "tabula-peutingeriana",
@@ -101,9 +102,9 @@
     "sortYear": 1200,
     "place": "Biblioteca Nacional da Áustria, Viena",
     "description": "Cópia em pergaminho de um mapa rodoviário romano da Antiguidade tardia, que mostra a rede de estradas do Império.",
-    "wiki": "Tabula_Peutingeriana",
     "sourceUrl": "https://en.wikipedia.org/wiki/Tabula_Peutingeriana",
-    "sourceLabel": "Wikipédia"
+    "sourceLabel": "Wikipédia",
+    "file": "TabulaPeutingeriana.jpg"
   },
   {
     "id": "hereford-mappa-mundi",
@@ -113,9 +114,9 @@
     "sortYear": 1300,
     "place": "Catedral de Hereford, Inglaterra",
     "description": "O maior mapa medieval que sobreviveu. É uma representação religiosa do mundo conhecido, não uma descrição literal.",
-    "wiki": "Hereford_Mappa_Mundi",
     "sourceUrl": "https://en.wikipedia.org/wiki/Hereford_Mappa_Mundi",
-    "sourceLabel": "Wikipédia"
+    "sourceLabel": "Wikipédia",
+    "file": "Hereford Mappa Mundi 1300.jpg"
   },
   {
     "id": "atlas-catalao",
@@ -125,9 +126,9 @@
     "sortYear": 1375,
     "place": "Biblioteca Nacional da França, Paris",
     "description": "Mapa-múndi medieval de Cresques Abraham, datado por convenção de 1375, embora possa ser do fim da década de 1370 ou do início da de 1380.",
-    "wiki": "Catalan_Atlas",
     "sourceUrl": "https://en.wikipedia.org/wiki/Catalan_Atlas",
-    "sourceLabel": "Wikipédia"
+    "sourceLabel": "Wikipédia",
+    "file": "1375 Atlas Catalan Abraham Cresques.jpg"
   },
   {
     "id": "fra-mauro",
@@ -137,9 +138,9 @@
     "sortYear": 1450,
     "place": "Biblioteca Nacional Marciana, Veneza",
     "description": "Mapa-múndi circular em pergaminho, feito pelo cartógrafo veneziano Fra Mauro.",
-    "wiki": "Fra_Mauro_map",
     "sourceUrl": "https://en.wikipedia.org/wiki/Fra_Mauro_map",
-    "sourceLabel": "Wikipédia"
+    "sourceLabel": "Wikipédia",
+    "file": "Fra Mauro World Map, c.1450 (1806 copy).jpg"
   },
   {
     "id": "tabula-rogeriana",
@@ -149,9 +150,9 @@
     "sortYear": 1154,
     "place": "Biblioteca Nacional da França (cópia de c. 1325)",
     "description": "Atlas de 70 mapas de Al-Idrisi, encomendado pelo rei Rogério II da Sicília. A cópia mais antiga que se conhece é de cerca de 1325.",
-    "wiki": "Tabula_Rogeriana",
     "sourceUrl": "https://en.wikipedia.org/wiki/Tabula_Rogeriana",
-    "sourceLabel": "Wikipédia"
+    "sourceLabel": "Wikipédia",
+    "file": "TabulaRogeriana.jpg"
   },
   {
     "id": "piri-reis",
@@ -161,9 +162,9 @@
     "sortYear": 1513,
     "place": "Palácio de Topkapı, Istambul",
     "description": "Mapa-múndi no estilo dos portulanos, feito pelo almirante otomano Piri Reis. Sobrevive o fragmento ocidental.",
-    "wiki": "Piri_Reis_map",
     "sourceUrl": "https://en.wikipedia.org/wiki/Piri_Reis_map",
-    "sourceLabel": "Wikipédia"
+    "sourceLabel": "Wikipédia",
+    "file": "Piri reis world map 01.jpg"
   },
   {
     "id": "planisferio-cantino",
@@ -173,9 +174,9 @@
     "sortYear": 1502,
     "place": "Biblioteca Estense, Módena",
     "description": "Mapa-múndi português em manuscrito, do início do século XVI.",
-    "wiki": "Cantino_planisphere",
     "sourceUrl": "https://en.wikipedia.org/wiki/Cantino_planisphere",
-    "sourceLabel": "Wikipédia"
+    "sourceLabel": "Wikipédia",
+    "file": "Cantino planisphere (1502).jpg"
   },
   {
     "id": "waldseemuller",
@@ -185,9 +186,9 @@
     "sortYear": 1507,
     "place": "Biblioteca do Congresso, Washington",
     "description": "Mapa-múndi de parede impresso por Martin Waldseemüller em abril de 1507. É o primeiro a usar o nome “América”.",
-    "wiki": "Waldseemüller_map",
     "sourceUrl": "https://en.wikipedia.org/wiki/Waldseem%C3%BCller_map",
-    "sourceLabel": "Wikipédia"
+    "sourceLabel": "Wikipédia",
+    "file": "Waldseemuller map, complete.jpg"
   },
   {
     "id": "papiro-de-turim",
@@ -197,9 +198,9 @@
     "sortYear": -1152,
     "place": "Museu Egípcio, Turim",
     "description": "Mapa egípcio em papiro que mostra o Wadi Hammamat, no deserto oriental do Egito.",
-    "wiki": "Turin_Papyrus_Map",
     "sourceUrl": "https://en.wikipedia.org/wiki/Turin_Papyrus_Map",
-    "sourceLabel": "Wikipédia"
+    "sourceLabel": "Wikipédia",
+    "file": "Turin Papyrus (geological map) - Museo Egizio Turin C 1879 1969 1899 p01.jpg"
   },
   {
     "id": "mapa-babilonico",
@@ -209,9 +210,9 @@
     "sortYear": -700,
     "place": "Museu Britânico, Londres (BM 92687)",
     "description": "Tábua de argila da Babilônia com um mapa-múndi esquemático e inscrições em acádio. Não é anterior ao século IX a.C.",
-    "wiki": "Babylonian_Map_of_the_World",
     "sourceUrl": "https://en.wikipedia.org/wiki/Babylonian_Map_of_the_World",
-    "sourceLabel": "Wikipédia"
+    "sourceLabel": "Wikipédia",
+    "file": "Babylonian Map of the World, 700-500 BC.jpg"
   },
   {
     "id": "mapa-de-madaba",
@@ -221,9 +222,9 @@
     "sortYear": 550,
     "place": "Igreja de São Jorge, Madaba, Jordânia",
     "description": "Mosaico de piso bizantino que mostra a Terra Santa, do Líbano ao delta do Nilo, com Jerusalém no centro.",
-    "wiki": "Madaba_Map",
     "sourceUrl": "https://en.wikipedia.org/wiki/Madaba_Map",
-    "sourceLabel": "Wikipédia"
+    "sourceLabel": "Wikipédia",
+    "file": "Madaba map.jpg"
   },
   {
     "id": "geografia-de-ptolomeu",
@@ -233,9 +234,9 @@
     "sortYear": 150,
     "place": "Manuscritos medievais e renascentistas",
     "description": "Tratado de mapas e coordenadas escrito em grego, em Alexandria, que reúne o conhecimento geográfico romano do século II. Traduzido para o árabe no século IX e para o latim por volta de 1406, serviu de base para os mapas europeus do Renascimento.",
-    "wiki": "Geography_(Ptolemy)",
     "sourceUrl": "https://en.wikipedia.org/wiki/Geography_(Ptolemy)",
-    "sourceLabel": "Wikipédia"
+    "sourceLabel": "Wikipédia",
+    "file": "World of Ptolemy as shown by Johannes de Armsshein - Ulm 1482.png"
   },
   {
     "id": "gough-map",
@@ -245,9 +246,9 @@
     "sortYear": 1350,
     "place": "Biblioteca Bodleiana, Oxford",
     "description": "Mapa medieval da Grã-Bretanha de data incerta, que os estudiosos situam entre cerca de 1300 e o início do século XV.",
-    "wiki": "Gough_Map",
     "sourceUrl": "https://en.wikipedia.org/wiki/Gough_Map",
-    "sourceLabel": "Wikipédia"
+    "sourceLabel": "Wikipédia",
+    "file": "GoughMap ca 1360.jpg"
   },
   {
     "id": "theatrum-orbis-terrarum",
@@ -257,9 +258,9 @@
     "sortYear": 1570,
     "place": "Antuérpia (edição original)",
     "description": "Atlas de Abraham Ortelius, considerado o primeiro atlas moderno por reunir mapas uniformes em cobre num só livro.",
-    "wiki": "Theatrum_Orbis_Terrarum",
     "sourceUrl": "https://en.wikipedia.org/wiki/Theatrum_Orbis_Terrarum",
-    "sourceLabel": "Wikipédia"
+    "sourceLabel": "Wikipédia",
+    "file": "Typus orbis terrarum - Norman B. Leventhal Map Center at the BPL.jpg"
   },
   {
     "id": "mapa-de-cassini",
@@ -269,9 +270,9 @@
     "sortYear": 1750,
     "place": "França",
     "description": "Primeiro mapa topográfico e geométrico de todo o Reino da França, na escala 1/86.400, feito pela família Cassini.",
-    "wiki": "Cassini_map",
     "sourceUrl": "https://en.wikipedia.org/wiki/Cassini_map",
-    "sourceLabel": "Wikipédia"
+    "sourceLabel": "Wikipédia",
+    "file": "0 Cassini Carte France cadrée.jpg"
   },
   {
     "id": "tratado-de-tordesilhas",
@@ -281,9 +282,9 @@
     "sortYear": 1494,
     "place": "Tordesilhas, Espanha",
     "description": "Tratado assinado em 7 de junho de 1494 entre Portugal e Castela. Uma linha dividiu as terras recém-descobertas: Portugal ficou com o leste e Castela com o oeste.",
-    "wiki": "Treaty_of_Tordesillas",
     "sourceUrl": "https://en.wikipedia.org/wiki/Treaty_of_Tordesillas",
-    "sourceLabel": "Wikipédia"
+    "sourceLabel": "Wikipédia",
+    "file": "Map of Meridian Line set under the Treaty of Tordesillas.jpg"
   },
   {
     "id": "mapa-do-colera-de-snow",
@@ -293,9 +294,9 @@
     "sortYear": 1854,
     "place": "Soho, Londres",
     "description": "Em setembro de 1854, um surto de cólera matou 420 pessoas em Soho. O mapa de pontos de John Snow mostrou os casos concentrados em volta da bomba da Broad Street e apontou a água contaminada como causa.",
-    "wiki": "1854_Broad_Street_cholera_outbreak",
     "sourceUrl": "https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak",
-    "sourceLabel": "Wikipédia"
+    "sourceLabel": "Wikipédia",
+    "file": "Snow-cholera-map-1.jpg"
   },
   {
     "id": "sykes-picot",
@@ -305,8 +306,8 @@
     "sortYear": 1916,
     "place": "Reino Unido e França",
     "description": "Tratado secreto entre Reino Unido e França, com o assentimento da Rússia e da Itália, que dividiu o território otomano do Oriente Médio em zonas de influência. O mapa assinado seguiu na carta de 9 de maio de 1916.",
-    "wiki": "Sykes–Picot_Agreement",
     "sourceUrl": "https://en.wikipedia.org/wiki/Sykes%E2%80%93Picot_Agreement",
-    "sourceLabel": "Wikipédia"
+    "sourceLabel": "Wikipédia",
+    "file": "MPK1-426 Sykes Picot Agreement Map signed 8 May 1916.jpg"
   }
 ]

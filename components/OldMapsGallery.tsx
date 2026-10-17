@@ -8,39 +8,16 @@ import styles from './OldMapsGallery.module.scss';
 
 type Filter = OldMapCategory | 'todos';
 
-// As imagens vêm da Wikimedia: pedimos o resumo do artigo na Wikipédia e usamos a miniatura.
-// O resultado fica em cache para não repetir a mesma consulta.
-const imageCache = new Map<string, Promise<string | null>>();
-
-function loadThumb(title: string): Promise<string | null> {
-  let p = imageCache.get(title);
-  if (!p) {
-    p = fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`)
-      .then((r) => (r.ok ? r.json() : null))
-      .then((j) => (j?.thumbnail?.source as string | undefined) ?? null)
-      .catch(() => null);
-    imageCache.set(title, p);
-  }
-  return p;
+// As imagens vêm do Wikimedia Commons: Special:FilePath redireciona para a miniatura
+// do arquivo na largura pedida (a Wikimedia só serve larguras padrão: 500, 1280...).
+function commonsFileUrl(file: string, width?: number) {
+  const name = encodeURIComponent(file.replace(/ /g, '_'));
+  const base = `https://commons.wikimedia.org/wiki/Special:FilePath/${name}`;
+  return width ? `${base}?width=${width}` : base;
 }
 
-// Troca a largura da miniatura (a Wikimedia só serve larguras padrão: 500, 1280...).
-function withWidth(url: string, width: number) {
-  return url.replace(/\/(\d+)px-/, `/${width}px-`);
-}
-
-function useThumb(title?: string) {
-  // undefined = carregando, null = sem imagem
-  const [thumb, setThumb] = useState<string | null | undefined>(title ? undefined : null);
-  useEffect(() => {
-    if (!title) return;
-    let alive = true;
-    loadThumb(title).then((t) => alive && setThumb(t));
-    return () => {
-      alive = false;
-    };
-  }, [title]);
-  return thumb;
+function commonsPageUrl(file: string) {
+  return `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(file.replace(/ /g, '_'))}`;
 }
 
 function categoryOf(id: OldMapCategory) {
@@ -48,18 +25,10 @@ function categoryOf(id: OldMapCategory) {
 }
 
 function MapPicture({ map, width, className }: { map: OldMap; width: number; className?: string }) {
-  const thumb = useThumb(map.wiki);
-  const wanted = thumb ? withWidth(thumb, width) : null;
-  const [src, setSrc] = useState<string | null>(null);
+  // 0 = largura pedida, 1 = arquivo original (se a largura não existir), 2 = sem imagem
+  const [stage, setStage] = useState(0);
 
-  useEffect(() => {
-    setSrc(wanted);
-  }, [wanted]);
-
-  if (thumb === undefined) {
-    return <div className={`${styles.placeholder} ${className ?? ''}`} aria-busy="true" />;
-  }
-  if (!src) {
+  if (!map.file || stage > 1) {
     return (
       <div className={`${styles.placeholder} ${className ?? ''}`}>
         <span aria-hidden>{categoryOf(map.category).icon}</span>
@@ -71,11 +40,10 @@ function MapPicture({ map, width, className }: { map: OldMap; width: number; cla
     // eslint-disable-next-line @next/next/no-img-element
     <img
       className={className}
-      src={src}
+      src={commonsFileUrl(map.file, stage === 0 ? width : undefined)}
       alt={`${map.name}, ${map.year}`}
       loading="lazy"
-      // Se o tamanho pedido não existir, volta para a miniatura original
-      onError={() => thumb && src !== thumb && setSrc(thumb)}
+      onError={() => setStage((v) => v + 1)}
     />
   );
 }
@@ -129,7 +97,16 @@ function Viewer({ map, onClose }: { map: OldMap; onClose: () => void }) {
       <div className={styles.viewerInfo}>
         <p>{map.description}</p>
         <p className={styles.credit}>
-          Imagem: Wikimedia Commons, via Wikipédia ·{' '}
+          {map.file && (
+            <>
+              Imagem:{' '}
+              <a href={commonsPageUrl(map.file)} target="_blank" rel="noreferrer">
+                Wikimedia Commons
+              </a>{' '}
+              ·{' '}
+            </>
+          )}
+          Fonte:{' '}
           <a href={map.sourceUrl} target="_blank" rel="noreferrer">
             {map.sourceLabel}
           </a>
