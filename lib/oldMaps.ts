@@ -6,7 +6,9 @@ export type OldMapCategory =
   | 'coreia'
   | 'europa'
   | 'islamico'
-  | 'descobrimentos';
+  | 'descobrimentos'
+  | 'antiguidade'
+  | 'marcos';
 
 export type OldMap = {
   id: string;
@@ -33,4 +35,6 @@ export const categories: { id: OldMapCategory; label: string; icon: string }[] =
   { id: 'europa', label: 'Europa', icon: '🏰' },
   { id: 'islamico', label: 'Mundo islâmico', icon: '🌙' },
   { id: 'descobrimentos', label: 'Descobrimentos', icon: '⚓' },
+  { id: 'antiguidade', label: 'Antiguidade', icon: '🏺' },
+  { id: 'marcos', label: 'Marcos históricos', icon: '📜' },
 ];

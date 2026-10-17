@@ -23,7 +23,7 @@ Demonstra rotas paralelas (`@panel`) e interceptadas (`(..)location`), com mapa 
 - Temas dia e noite (botão **🌙 Noite / ☀ Dia**), com efeitos próprios e preferência salva no navegador
 - Esc fecha o painel
 - Painel vira gaveta no celular
-- Galeria de mapas antigos (`/mapas-antigos`): mapas famosos da China, do Japão, da Coreia, da Europa, do mundo islâmico e dos Descobrimentos, com menu hambúrguer de categorias e visualizador com zoom
+- Galeria de mapas antigos (`/mapas-antigos`): mapas famosos da China, do Japão, da Coreia, da Europa, do mundo islâmico dos Descobrimentos, da Antiguidade e de marcos históricos (Tordesilhas, mapa do cólera de Snow, Sykes–Picot), com menu hambúrguer de categorias e visualizador com zoom
 
 ## Temas
 
@@ -54,7 +54,7 @@ Edite `data/locations.json`. Campos: `id`, `name`, `region`, `type` (`vila`, `to
 
 ## Mapas antigos
 
-Os mapas ficam em `data/old-maps.json`. Cada item tem `category` (`china`, `japao`, `coreia`, `europa`, `islamico`, `descobrimentos`), `year`, `place`, `description`, `sourceUrl` e, opcionalmente, `wiki`: o título do artigo da Wikipédia cuja imagem principal é usada (a imagem vem da Wikimedia em tempo de execução, sem arquivos no repositório). Sem `wiki`, o cartão mostra um espaço reservado e o link do acervo. Para criar uma categoria nova, acrescente-a em `lib/oldMaps.ts`.
+Os mapas ficam em `data/old-maps.json`. Cada item tem `category` (`china`, `japao`, `coreia`, `europa`, `islamico`, `descobrimentos`, `antiguidade`, `marcos`), `year`, `place`, `description`, `sourceUrl` e, opcionalmente, `wiki`: o título do artigo da Wikipédia cuja imagem principal é usada (a imagem vem da Wikimedia em tempo de execução, sem arquivos no repositório). Sem `wiki`, o cartão mostra um espaço reservado e o link do acervo. Para criar uma categoria nova, acrescente-a em `lib/oldMaps.ts`.
 
 ## Rotas
 
