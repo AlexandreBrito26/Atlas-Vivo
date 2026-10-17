@@ -23,6 +23,7 @@ Demonstra rotas paralelas (`@panel`) e interceptadas (`(..)location`), com mapa 
 - Temas dia e noite (botão **🌙 Noite / ☀ Dia**), com efeitos próprios e preferência salva no navegador
 - Esc fecha o painel
 - Painel vira gaveta no celular
+- Galeria de mapas antigos (`/mapas-antigos`): mapas famosos da China, do Japão, da Coreia, da Europa, do mundo islâmico e dos Descobrimentos, com menu hambúrguer de categorias e visualizador com zoom
 
 ## Temas
 
@@ -51,9 +52,14 @@ O botão **Som** liga o som ambiente (o navegador só permite áudio depois de u
 
 Edite `data/locations.json`. Campos: `id`, `name`, `region`, `type` (`vila`, `torre`, `porto`, `ruina`, `fortaleza`, `santuario`, `floresta`), `description`, `x`/`y` (em %), `tags`, `links` e, opcionalmente, `image`.
 
+## Mapas antigos
+
+Os mapas ficam em `data/old-maps.json`. Cada item tem `category` (`china`, `japao`, `coreia`, `europa`, `islamico`, `descobrimentos`), `year`, `place`, `description`, `sourceUrl` e, opcionalmente, `wiki`: o título do artigo da Wikipédia cuja imagem principal é usada (a imagem vem da Wikimedia em tempo de execução, sem arquivos no repositório). Sem `wiki`, o cartão mostra um espaço reservado e o link do acervo. Para criar uma categoria nova, acrescente-a em `lib/oldMaps.ts`.
+
 ## Rotas
 
 - `/map`: mapa com painel
+- `/mapas-antigos`: galeria de mapas históricos
 - `/location/[id]`: acesso direto, página completa
 
 ## Rodar

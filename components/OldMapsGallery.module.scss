@@ -1,0 +1,311 @@
+@use '../styles/tokens' as *;
+
+.page {
+  min-height: 100vh;
+  background: $bg;
+  color: $parchment;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 18px;
+  background: rgba($bg, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba($parchment, 0.12);
+}
+
+.headTitle {
+  flex: 1;
+  min-width: 0;
+
+  h1 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  p {
+    margin: 2px 0 0;
+    font-size: 0.85rem;
+    color: $muted;
+  }
+}
+
+.back {
+  color: $accent;
+  text-decoration: none;
+  white-space: nowrap;
+  &:hover { text-decoration: underline; }
+}
+
+// Botão hambúrguer
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  padding: 0 10px;
+  background: transparent;
+  border: 1px solid rgba($parchment, 0.25);
+  border-radius: 10px;
+  cursor: pointer;
+
+  span {
+    display: block;
+    height: 2px;
+    background: $parchment;
+    border-radius: 2px;
+  }
+
+  &:hover { border-color: $accent; }
+  &:focus-visible { outline: 2px solid $accent; outline-offset: 2px; }
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 40;
+  width: min(300px, 85vw);
+  padding: 20px 16px;
+  background: $panel-bg;
+  color: $ink;
+  transform: translateX(-100%);
+  visibility: hidden;
+  transition: transform 0.22s ease, visibility 0.22s;
+
+  h2 {
+    margin: 0 0 14px;
+    font-size: 1.1rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 6px;
+  }
+
+  button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 11px 12px;
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: left;
+
+    &:hover { background: rgba($accent, 0.15); }
+    &:focus-visible { outline: 2px solid $accent; }
+    &[aria-current='true'] {
+      background: rgba($accent, 0.25);
+      border-color: $accent;
+      font-weight: bold;
+    }
+
+    b {
+      font-size: 0.8rem;
+      color: $muted;
+    }
+  }
+}
+
+.drawerOpen {
+  transform: none;
+  visibility: visible;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 18px;
+  padding: 22px 18px 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  background: rgba($parchment, 0.06);
+  border: 1px solid rgba($parchment, 0.14);
+  border-radius: $radius;
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    border-color: $accent;
+  }
+  &:focus-visible { outline: 2px solid $accent; outline-offset: 2px; }
+}
+
+.thumb {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  background: #2a2722;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 190px;
+  background: linear-gradient(135deg, #3a3225, #24201a);
+  color: $muted;
+
+  span { font-size: 2.2rem; }
+  small { font-size: 0.75rem; }
+
+  &[aria-busy='true'] {
+    animation: pulse 1.4s ease-in-out infinite;
+  }
+}
+
+@keyframes pulse {
+  50% { opacity: 0.55; }
+}
+
+.cardText {
+  padding: 12px 14px 14px;
+
+  h3 {
+    margin: 0 0 4px;
+    font-size: 1rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.82rem;
+    color: $muted;
+  }
+}
+
+// Visualizador com zoom
+.viewer {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  background: #0f0e0c;
+}
+
+.viewerTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba($parchment, 0.12);
+
+  h2 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  p {
+    margin: 3px 0 0;
+    font-size: 0.82rem;
+    color: $muted;
+  }
+
+  button {
+    width: 38px;
+    height: 38px;
+    flex: none;
+    font-size: 1rem;
+    color: $parchment;
+    background: transparent;
+    border: 1px solid rgba($parchment, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover { border-color: $accent; }
+  }
+}
+
+.viewerBody {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  cursor: grab;
+  &:active { cursor: grabbing; }
+}
+
+.zoomBar {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    color: $parchment;
+    background: rgba($bg, 0.85);
+    border: 1px solid rgba($parchment, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover { border-color: $accent; }
+  }
+}
+
+.big {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.viewerInfo {
+  padding: 10px 16px 14px;
+  border-top: 1px solid rgba($parchment, 0.12);
+  max-height: 32vh;
+  overflow: auto;
+
+  p { margin: 0 0 6px; line-height: 1.45; }
+}
+
+.credit {
+  font-size: 0.78rem;
+  color: $muted;
+  a { color: $accent; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .drawer, .card { transition: none; }
+  .placeholder[aria-busy='true'] { animation: none; }
+}

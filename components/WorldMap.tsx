@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useMemo, useRef, useState, type MouseEvent as ReactMouseEvent } from 'react';
+import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import {
   TransformWrapper,
@@ -874,6 +875,9 @@ export function WorldMap({ locations: baseLocations, regions: baseRegions = [], 
                 />
               )}
               <button onClick={copyLink}>{copied ? 'Link copiado!' : 'Copiar link'}</button>
+              <Link href="/mapas-antigos" title="Mapas históricos da China, do Japão e de outros países">
+                Mapas antigos
+              </Link>
               <button onClick={exportPng}>Exportar PNG</button>
               <button onClick={exportJson}>Exportar JSON</button>
               <button onClick={exportRegions}>Exportar regiões</button>
